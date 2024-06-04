@@ -84,7 +84,6 @@ class EditPanel
 
         $assetCollector = GeneralUtility::makeInstance(AssetCollector::class);
         $assetCollector->addStylesheet('feediting', 'EXT:feediting/Resources/Public/Styles/basic.css');
-        $assetCollector->addJavaScript('feediting', 'EXT:feediting/Resources/Public/JavaScript/popover.js');
 
         array_walk($data, static function (string &$value) {
             $value = '<span class="tx-feediting-element">' . $value . '</span>';
